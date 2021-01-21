@@ -13,6 +13,8 @@
 		834B9A3E25BA062200781637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834B9A3C25BA062200781637 /* Main.storyboard */; };
 		834B9A4025BA062400781637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834B9A3F25BA062400781637 /* Assets.xcassets */; };
 		834B9A4325BA062400781637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834B9A4125BA062400781637 /* LaunchScreen.storyboard */; };
+		834B9A4C25BA07A500781637 /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B9A4B25BA07A500781637 /* JobCell.swift */; };
+		834B9A5625BA389A00781637 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B9A5525BA389A00781637 /* Job.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		834B9A3F25BA062400781637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		834B9A4225BA062400781637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		834B9A4425BA062400781637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834B9A4B25BA07A500781637 /* JobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
+		834B9A5525BA389A00781637 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		834B9A6025BA448700781637 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		834B9A6125BA448F00781637 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,8 @@
 		834B9A2A25BA062200781637 = {
 			isa = PBXGroup;
 			children = (
+				834B9A6025BA448700781637 /* README.md */,
+				834B9A6125BA448F00781637 /* LICENSE.md */,
 				834B9A3525BA062200781637 /* GeocoderTableView */,
 				834B9A3425BA062200781637 /* Products */,
 			);
@@ -56,15 +64,49 @@
 		834B9A3525BA062200781637 /* GeocoderTableView */ = {
 			isa = PBXGroup;
 			children = (
+				834B9A5225BA305800781637 /* Support files */,
+				834B9A4E25BA303F00781637 /* App life cycle */,
+				834B9A5425BA387500781637 /* Models */,
+				834B9A5025BA304F00781637 /* Views */,
+			);
+			path = GeocoderTableView;
+			sourceTree = "<group>";
+		};
+		834B9A4E25BA303F00781637 /* App life cycle */ = {
+			isa = PBXGroup;
+			children = (
 				834B9A3625BA062200781637 /* AppDelegate.swift */,
 				834B9A3825BA062200781637 /* SceneDelegate.swift */,
+			);
+			path = "App life cycle";
+			sourceTree = "<group>";
+		};
+		834B9A5025BA304F00781637 /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				834B9A3A25BA062200781637 /* ViewController.swift */,
+				834B9A4B25BA07A500781637 /* JobCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		834B9A5225BA305800781637 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
 				834B9A3C25BA062200781637 /* Main.storyboard */,
 				834B9A3F25BA062400781637 /* Assets.xcassets */,
 				834B9A4125BA062400781637 /* LaunchScreen.storyboard */,
 				834B9A4425BA062400781637 /* Info.plist */,
 			);
-			path = GeocoderTableView;
+			name = "Support files";
+			sourceTree = "<group>";
+		};
+		834B9A5425BA387500781637 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				834B9A5525BA389A00781637 /* Job.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +182,8 @@
 				834B9A3B25BA062200781637 /* ViewController.swift in Sources */,
 				834B9A3725BA062200781637 /* AppDelegate.swift in Sources */,
 				834B9A3925BA062200781637 /* SceneDelegate.swift in Sources */,
+				834B9A4C25BA07A500781637 /* JobCell.swift in Sources */,
+				834B9A5625BA389A00781637 /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
